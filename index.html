@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <h2>Password Genrator</h2>
+        <h3 class="password-display" id="password-display">password</h3>
+        <form id="form">
+            <label for="no.of characters">Number of characters</label>
+            <div class="password-container">
+            <input type="range" max=50 min=1 value=5 id="password-slider">
+            <input type="number" max=50 min=1 value=5 id="password-number">
+            </div>
+        
+
+        <label for="includeUppercase">Include Uppercase</label>
+        <input type="checkbox" id="includeUppercase">
+
+        <label for="includeSymbol">Include Symbol</label>
+        <input type="checkbox" id="includeSymbol">
+
+        <label for="includeNumber">Include Number</label>
+        <input type="checkbox" id="includeNumber">
+        <button  class="btn" type="submit">Generate</button>
+    </form>
+    </div>
+</body>
+
+</html>
